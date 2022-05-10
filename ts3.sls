@@ -16,3 +16,6 @@
      - ' '
      - '[Install]'
      - 'WantedBy=multi-user.target'
+
+teamspeak3.service:
+  service.enabled
