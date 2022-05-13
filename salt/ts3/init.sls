@@ -21,3 +21,7 @@ extract_teamspeak3:
     - user: teamspeak
     - group: teamspeak
     - if_missing: /home/teamspeak/teamspeak3-server_linux_amd64
+    
+#Accepts licence   
+/home/teamspeak/teamspeak3-server_linux_amd64/.ts3server_license_accepted:
+  file.managed
