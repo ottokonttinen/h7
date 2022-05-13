@@ -9,7 +9,7 @@
      - 'After=network.target'
      - ' '
      - '[Service]'
-     - 'User=otto'
+     - 'User=teamspeak'
      - 'WorkingDirectory=/home/teamspeak/teamspeak3-server_linux_amd64/'
      - 'ExecStart=/home/teamspeak/teamspeak3-server_linux_amd64/ts3server'
      - 'Restart=on-failure'
