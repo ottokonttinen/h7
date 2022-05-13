@@ -4,3 +4,10 @@
 #make -j4
 #sudo make install
 #sudo systemctl restart systemd-binfmt
+
+
+/home/teamspeak/box64/build:
+  file.directory:
+    - makedirs: True
+    - user: teamspeak
+    - group: teamspeak
