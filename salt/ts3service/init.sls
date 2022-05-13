@@ -19,3 +19,8 @@
 
 teamspeak3.service:
   service.enabled
+  
+  
+#teamspeak3.service:
+#  service.running:
+#    - enable: True
