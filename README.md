@@ -1,6 +1,6 @@
 # h7
 
-Name: Otto Konttinen
+Name: Otto Konttinen \
 Current stage: Alpha
 
 
