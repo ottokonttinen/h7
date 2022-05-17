@@ -81,7 +81,7 @@ Compile:
 Install:
   cmd.run:
     - name: 'sudo make install'
-    - cwd: cwd: /home/teamspeak/box86/build
+    - cwd: /home/teamspeak/box86/build
 
     
     
