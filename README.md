@@ -15,4 +15,4 @@ Requirements:
 `git clone https://github.com/ottokonttinen/h7.git` Download from Git. \
 `mv ~/h7/salt/ /srv/` Move salt folder to /srv/ direcotory.  \
 `sudo apt install salt-master` Install salt-master. \ 
-`sudo salt-call --local state.apply -l debug 'ts3'` Run salt locally to install TeamSpeak. 
+`sudo salt-call --local state.apply -l debug 'ts3'` Run salt locally to install TeamSpeak. \
