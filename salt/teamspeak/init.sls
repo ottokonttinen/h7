@@ -75,13 +75,14 @@ systemd-binfmt:
 
 extract_teamspeak3:
   archive.extracted:
-    - name: /home/teamspeak/teamspeak3-server_linux_x86-3.13.6.tar.bz2
+    - name: /home/teamspeak/teamspeak3-server_linux_x86
     - source: https://files.teamspeak-services.com/releases/server/3.13.6/teamspeak3-server_linux_x86-3.13.6.tar.bz2
     - source_hash: f142a215e76feb0e5b9aa36fa37017c109d444ec1b66753465387d575ef39b14
     - user: teamspeak
     - group: teamspeak
-    - if_missing: /home/teamspeak/teamspeak3-server_linux_x86
-
+    
+/home/teamspeak/teamspeak3-server_linux_x86/.ts3server_license_accepted:
+  file.managed
 
 
 
