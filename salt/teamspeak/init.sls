@@ -38,16 +38,7 @@ Generate_makefile:
   cmd.run:
    - name: 'cmake .. -DRPI4ARM64=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo'
    - cwd: /home/teamspeak/box86/build
-   - creates: 
-      - /home/teamspeak/box86/build/CMakeCache.txt
-      - /home/teamspeak/box86/build/CMakeFiles
-      - /home/teamspeak/box86/build/cmake_install.cmake
-      - /home/teamspeak/box86/build/cmake_uninstall.cmake
-      - /home/teamspeak/box86/build/CPackConfig.cmake
-      - /home/teamspeak/box86/build/CPackSourceConfig.cmake
-      - /home/teamspeak/box86/build/CTestTestfile.cmake
-      - /home/teamspeak/box86/build/Makefile
-      - /home/teamspeak/box86/build/system
+   - creates: '/home/teamspeak/box86/build/system'
       
 Compile:
   cmd.run:
