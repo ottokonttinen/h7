@@ -3,7 +3,7 @@ This project is part of a configuration management course ICT4TN022-3015 at Haag
 
 Creator: Otto Konttinen \
 Current stage: Alpha \
-Download: 
+Download: [https://github.com/ottokonttinen/h7.git](https://github.com/ottokonttinen/h7.git) \
 
 Requirements:
 
