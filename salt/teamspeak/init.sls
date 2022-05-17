@@ -26,9 +26,7 @@ Extra_steps_for_64bit:
     - creates: '/usr/bin/arm-linux-gnueabihf-pkg-config'
 
 gcc-arm-linux-gnueabihf:
-  pkg.installed:
-    - onchanges:
-      - cmd: Extra_steps_for_64bit  
+  pkg.installed  
 
 All_packages:
   cmd.run:
