@@ -9,7 +9,7 @@ Requirements:
 +  64bit OS
 +  [Salt-master](https://repo.saltproject.io/) 
 
-![](https://ottokonttinen.files.wordpress.com/2022/05/nayttokuva-2022-05-17-033248.png) \
+![](https://ottokonttinen.files.wordpress.com/2022/05/nayttokuva-2022-05-17-033248.png) 
 
 ## Installation
 `git clone https://github.com/ottokonttinen/h7.git` Download from Git. \
