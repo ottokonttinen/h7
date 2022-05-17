@@ -90,20 +90,3 @@ extract_teamspeak3:
 
 teamspeak3.service:
   service.enabled  
-
-
-
-
-
-#BOX86 manual INSTALL
-#git clone --branch "v0.2.2" https://github.com/ptitSeb/box86
-#sudo dpkg --add-architecture armhf
-#sudo apt update
-#sudo apt install gcc-arm-linux-gnueabihf libc6:armhf libncurses5:armhf libstdc++6:armhf
-#cd ~/box86
-#mkdir build
-#cd build
-#cmake .. -DRPI4ARM64=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo
-#make -j$(nproc)
-#sudo make install
-#sudo systemctl restart systemd-binfmt 
