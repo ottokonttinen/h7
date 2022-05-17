@@ -25,6 +25,8 @@ teamspeak:
 #sudo make install
 #sudo systemctl restart systemd-binfmt
 
+
+
 Box86:
   git.cloned:
     - name: 'https://github.com/ptitSeb/box86.git'
@@ -35,3 +37,19 @@ Box86:
     - makedirs: True
     - user: teamspeak
     - group: teamspeak
+    
+Extra_steps_for_64bit:
+  cmd.run:
+    - name: 'sudo dpkg --add-architecture armhf'
+    - creates: '/usr/bin/arm-linux-gnueabihf-pkg-config'
+
+   
+
+
+
+
+#Generate_makefile:
+#  cmd.run:
+#    - name: 'cmake .. -DRPI4ARM64=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo'
+#    - cwd: /home/teamspeak/box86/build
+
