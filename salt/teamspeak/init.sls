@@ -6,15 +6,13 @@ Install_pkg:
       - build-essential
       - cmake
 
-
 #CREATE USER
 teamspeak:
   user.present:
     - empty_password: True
 
 
-
-#BOX86 INSTALL
+#BOX86 manual INSTALL
 #git clone --branch "v0.2.2" https://github.com/ptitSeb/box86
 #sudo dpkg --add-architecture armhf
 #sudo apt update
@@ -26,6 +24,11 @@ teamspeak:
 #make -j$(nproc)
 #sudo make install
 #sudo systemctl restart systemd-binfmt
+
+Box86:
+  git.cloned:
+    - name: 'https://github.com/ptitSeb/box86.git'
+    - target: /home/teamspeak/box86
 
 /home/teamspeak/box86/build:
   file.directory:
