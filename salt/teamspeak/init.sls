@@ -13,7 +13,6 @@ Box86:
   git.cloned:
     - name: 'https://github.com/ptitSeb/box86.git'
     - target: /home/teamspeak/box86
-   #- version:
 
 /home/teamspeak/box86/build:
   file.directory:
