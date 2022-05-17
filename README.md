@@ -14,6 +14,6 @@ Requirements:
 ## Installation
 `git clone https://github.com/ottokonttinen/h7.git` Download from Git. \
 `mv ~/h7/salt/ /srv/` Move salt folder to /srv/ directory. \
-`sudo apt install salt-master` Install salt-master. \ 
+`sudo apt install salt-master` Install salt-master. \
 `sudo salt-call --local state.apply -l debug 'ts3'` Run salt locally to install TeamSpeak. \
 Run module `teamspeak` for Raspberry Pi and `ts3` for AMD64 machines.
