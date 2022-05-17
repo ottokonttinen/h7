@@ -40,7 +40,7 @@ Box86:
     
 Extra_steps_for_64bit:
   cmd.run:
-    - name: 'sudo dpkg --add-architecture armhf'
+    - name: 'sudo dpkg --add-architecture armhf;sudo apt update'
     - creates: '/usr/bin/arm-linux-gnueabihf-pkg-config'
 
    
