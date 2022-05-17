@@ -1,4 +1,3 @@
-#INSTALL git, build-essential, cmake
 Install_pkg:
   pkg.installed:
     - pkgs:
@@ -6,7 +5,6 @@ Install_pkg:
       - build-essential
       - cmake
 
-#CREATE USER
 teamspeak:
   user.present:
     - empty_password: True
@@ -39,21 +37,6 @@ All_packages:
    - onchanges:
      - pkg: gcc-arm-linux-gnueabihf
 
-#BOX86 manual INSTALL
-#git clone --branch "v0.2.2" https://github.com/ptitSeb/box86
-#sudo dpkg --add-architecture armhf
-#sudo apt update
-#sudo apt install gcc-arm-linux-gnueabihf libc6:armhf libncurses5:armhf libstdc++6:armhf
-#cd ~/box86
-#mkdir build
-#cd build
-#cmake .. -DRPI4ARM64=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo
-#make -j$(nproc)
-#sudo make install
-#sudo systemctl restart systemd-binfmt
-
-
-
 Generate_makefile:
   cmd.run:
    - name: 'cmake .. -DRPI4ARM64=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo'
@@ -77,12 +60,11 @@ Compile:
       - /home/teamspeak/box86/build/box86
       - /home/teamspeak/box86/build/libdynarec.a      
       
-
 Install:
   cmd.run:
     - name: 'sudo make install'
     - cwd: /home/teamspeak/box86/build
-
+    - creates: /home/teamspeak/box86/build/install_manifest.txt
     
     
 systemd-binfmt:
