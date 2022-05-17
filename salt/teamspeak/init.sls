@@ -68,3 +68,28 @@ Generate_makefile:
       - /home/teamspeak/box86/build/CTestTestfile.cmake
       - /home/teamspeak/box86/build/Makefile
       - /home/teamspeak/box86/build/system
+      
+Compile:
+  cmd.run:
+    - name: 'make -j$(nproc)'
+    - cwd: /home/teamspeak/box86/build     
+    - creates:
+      - /home/teamspeak/box86/build/box86
+      - /home/teamspeak/box86/build/libdynarec.a      
+      
+
+Install:
+  cmd.run:
+    - name: 'sudo make install'
+    - cwd: cwd: /home/teamspeak/box86/build
+
+    
+    
+systemd-binfmt:
+  service.running:
+    - enable: True
+    - reload: True
+    - watch:
+      - cmd: Install   
+   
+
