@@ -25,7 +25,7 @@ Extra_steps_for_64bit:
     - name: 'sudo dpkg --add-architecture armhf;sudo apt update'
     - creates: '/usr/bin/arm-linux-gnueabihf-pkg-config'
 
- gcc-arm-linux-gnueabihf:
+gcc-arm-linux-gnueabihf:
   pkg.installed:
     - onchanges:
       - cmd: Extra_steps_for_64bit  
