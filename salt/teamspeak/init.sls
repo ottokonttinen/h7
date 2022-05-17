@@ -64,8 +64,7 @@ Install:
   cmd.run:
     - name: 'sudo make install'
     - cwd: /home/teamspeak/box86/build
-    - creates: /home/teamspeak/box86/build/install_manifest.txt
-    
+    - creates: /home/teamspeak/box86/build/install_manifest.txt    
     
 systemd-binfmt:
   service.running:
@@ -73,6 +72,20 @@ systemd-binfmt:
     - reload: True
     - watch:
       - cmd: Install   
+
+extract_teamspeak3:
+  archive.extracted:
+    - name: /home/teamspeak/teamspeak3-server_linux_x86-3.13.6.tar.bz2
+    - source: https://files.teamspeak-services.com/releases/server/3.13.6/teamspeak3-server_linux_x86-3.13.6.tar.bz2
+    - source_hash: f142a215e76feb0e5b9aa36fa37017c109d444ec1b66753465387d575ef39b14
+    - user: teamspeak
+    - group: teamspeak
+    - if_missing: /home/teamspeak/teamspeak3-server_linux_x86
+
+
+
+
+
 
 #BOX86 manual INSTALL
 #git clone --branch "v0.2.2" https://github.com/ptitSeb/box86
@@ -85,6 +98,4 @@ systemd-binfmt:
 #cmake .. -DRPI4ARM64=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo
 #make -j$(nproc)
 #sudo make install
-#sudo systemctl restart systemd-binfmt  
-
-
+#sudo systemctl restart systemd-binfmt 
