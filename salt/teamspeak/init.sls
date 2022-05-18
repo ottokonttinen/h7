@@ -6,8 +6,7 @@ Install_pkg:
       - cmake
 
 teamspeak:
-  user.present:
-    - empty_password: True
+  user.present
 
 Box86:
   git.cloned:
