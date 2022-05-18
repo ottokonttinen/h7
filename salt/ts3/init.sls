@@ -1,6 +1,5 @@
 teamspeak:
-  user.present:
-    - empty_password: True
+  user.present
 
 extract_teamspeak3:
   archive.extracted:
