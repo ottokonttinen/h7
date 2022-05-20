@@ -4,7 +4,7 @@ This project is part of a configuration management course ICT4TN022-3015 at Haag
 
 \
 Creator: Otto Konttinen \
-Current stage: Alpha \
+Current stage: Beta \
 Download: [https://github.com/ottokonttinen/h7.git](https://github.com/ottokonttinen/h7.git) \
 Requirements: 
 +  64bit Linux OS
@@ -18,3 +18,9 @@ Requirements:
 `sudo apt install salt-master` Install salt-master. \
 `sudo salt-call --local state.apply -l debug 'ts3'` Run salt locally to install TeamSpeak. \
 Run module `teamspeak` for Raspberry Pi and `ts3` for AMD64 machines.
+
+Sources used: \ 
+[https://pimylifeup.com/raspberry-pi-teamspeak/](https://pimylifeup.com/raspberry-pi-teamspeak/)
+[https://pimylifeup.com/raspberry-pi-x86/](https://pimylifeup.com/raspberry-pi-x86/)
+[https://docs.saltproject.io](https://docs.saltproject.io)
+[https://teamspeak.com/en/downloads/#server](https://teamspeak.com/en/downloads/#server)
