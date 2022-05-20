@@ -19,7 +19,7 @@ Requirements:
 `sudo salt-call --local state.apply -l debug 'ts3'` Run salt locally to install TeamSpeak. \
 Run module `teamspeak` for Raspberry Pi and `ts3` for AMD64 machines.
 
-Sources used: \ 
+Sources used: \
 [https://pimylifeup.com/raspberry-pi-teamspeak/](https://pimylifeup.com/raspberry-pi-teamspeak/) \
 [https://pimylifeup.com/raspberry-pi-x86/](https://pimylifeup.com/raspberry-pi-x86/) \
 [https://docs.saltproject.io](https://docs.saltproject.io) \
