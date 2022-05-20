@@ -20,7 +20,7 @@ Requirements:
 Run module `teamspeak` for Raspberry Pi and `ts3` for AMD64 machines.
 
 Sources used: \ 
-[https://pimylifeup.com/raspberry-pi-teamspeak/](https://pimylifeup.com/raspberry-pi-teamspeak/)
-[https://pimylifeup.com/raspberry-pi-x86/](https://pimylifeup.com/raspberry-pi-x86/)
-[https://docs.saltproject.io](https://docs.saltproject.io)
+[https://pimylifeup.com/raspberry-pi-teamspeak/](https://pimylifeup.com/raspberry-pi-teamspeak/) \
+[https://pimylifeup.com/raspberry-pi-x86/](https://pimylifeup.com/raspberry-pi-x86/) \
+[https://docs.saltproject.io](https://docs.saltproject.io) \
 [https://teamspeak.com/en/downloads/#server](https://teamspeak.com/en/downloads/#server)
