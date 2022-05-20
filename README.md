@@ -7,7 +7,7 @@ Creator: Otto Konttinen \
 Current stage: Alpha \
 Download: [https://github.com/ottokonttinen/h7.git](https://github.com/ottokonttinen/h7.git) \
 Requirements: 
-+  64bit OS
++  64bit Linux OS
 +  [Salt-master](https://repo.saltproject.io/) 
 
 ![](https://ottokonttinen.files.wordpress.com/2022/05/nayttokuva-2022-05-17-033248.png) 
