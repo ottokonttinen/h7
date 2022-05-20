@@ -82,7 +82,7 @@ extract_teamspeak3:
      - 'User=root'
      - 'WorkingDirectory=/home/teamspeak/teamspeak3-server_linux_x86/'
      - 'ExecStart=/home/teamspeak/teamspeak3-server_linux_x86/ts3server'
-     - 'Restart=alway'
+     - 'Restart=always'
      - ' '
      - '[Install]'
      - 'WantedBy=multi-user.target'
